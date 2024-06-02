@@ -4,7 +4,7 @@ parent:
 -->
 
 <div align="center">
-  <h1>Evermint</h1>
+  <h1>Kairoschain</h1>
 </div>
 
 <div align="center">
@@ -22,9 +22,9 @@ parent:
 
 [> View example after rename](https://github.com/EscanBE/evermint/pull/1)
 
-### About Evermint
+### About Kairoschain
 
-Evermint is a fork of open source Evmos v12.1.6, maintained by Escan team with bug fixes, customization and enable developers to fork and transform to their chain, fully customized, in just 2 steps.
+Kairoschain is a fork of open source Evmos v12.1.6, maintained by Escan team with bug fixes, customization and enable developers to fork and transform to their chain, fully customized, in just 2 steps.
 
 _Important Note: Evermint was born for development and research purpose so maintainers do not support migration for new upgrade/breaking changes._
 
@@ -35,11 +35,11 @@ that is fully compatible and interoperable with Ethereum.
 It's built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/)
 which runs on top of the [Tendermint Core](https://github.com/cometbft/cometbft) consensus engine.
 
-### Different of Evermint & Evmos
+### Different of Kairoschain & Evmos
 
-- Evermint is for research and development purpose.
-- Evermint is fork of open source Evmos v12.1.6 plus bug fixes.
-- Evermint is [currently removing some modules](https://github.com/EscanBE/evermint/issues/41) from Evmos codebase and only keep `x/evm`, `x/erc20`, `x/feemarket`. The goal is to make it more simple for research and only focus on the skeleton of Evmos.
+- Kairoschain is for research and development purpose.
+- Kairoschain is fork of open source Evmos v12.1.6 plus bug fixes.
+- Kairoschain is [currently removing some modules](https://github.com/EscanBE/evermint/issues/41) from Evmos codebase and only keep `x/evm`, `x/erc20`, `x/feemarket`. The goal is to make it more simple for research and only focus on the skeleton of Evmos.
 
 ## Documentation
 
@@ -54,10 +54,10 @@ To learn how the Evmos works from a high-level perspective,
 go to the [Protocol Overview](https://docs.evmos.org/protocol) section from the documentation.
 You can also check the instructions to [Run a Node](https://docs.evmos.org/protocol/evmos-cli#run-an-evmos-node).
 
-### Additional feature provided by Evermint:
+### Additional feature provided by Kairoschain:
 1. Command convert between 0x address and bech32 address, or any custom bech32 HRP
 ```bash
-evmd convert-address evm1sv9m0g7ycejwr3s369km58h5qe7xj77hxrsmsz evmos
+kairosd convert-address evm1sv9m0g7ycejwr3s369km58h5qe7xj77hxrsmsz evmos
 # alias: "ca"
 ```
 2. [Rename chain](https://github.com/EscanBE/evermint/blob/main/RENAME_CHAIN.md)
