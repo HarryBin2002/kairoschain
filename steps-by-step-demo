@@ -1,0 +1,33 @@
+I) Configuration minimum-gas-prices 
+1) start chain with set up minimum-gas-price: 
+	blogd start --minimum-gas-prices=2stake
+
+
+2) Get balances address wallet:
+	blogd keys list
+	blogd query bank balances cosmos15dm2q2cf48tzq8vz92v8rx4dxegdzkw0tlhe7w
+	blogd query bank balances cosmos1rsrs8p5zkqqwtrdry77c637n50pyd3s86tt3xv
+
+3) execute transaction
+	blogd tx bank send cosmos15dm2q2cf48tzq8vz92v8rx4dxegdzkw0tlhe7w cosmos1rsrs8p5zkqqwtrdry77c637n50pyd3s86tt3xv 888stake --chain-id=blog --gas-prices=1stake
+
+
+
+II) Interaction with Blog Blockchain
+blogd tx blog create-post title1 body1 --from alice --chain-id blog
+blogd q blog show-post 0
+blogd tx blog create-post title2 body2 --from bob --chain-id blog
+blogd q blog list-post
+blogd tx blog update-post "updated title1" "updated body1" 0 --from alice --chain-id blog
+blogd tx blog delete-post 0 --from alice  --chain-id blog
+
+III) Interaction with Kairoschain
+./local_node.sh
+connect with http://127.0.0.1:8545
+execute transaction
+check transaction hash
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0xfea8533797e0a8845af77756b9b5a3984fcf3dc820c2c8315fd25ecc0c98db04"],"id":1}' http://localhost:8545
+
+
+
+nvm use v16.17.1

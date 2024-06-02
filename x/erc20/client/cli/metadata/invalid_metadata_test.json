@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "description": 1,
+      "denom_units": [
+        {
+          "denom": "ukai",
+          "exponent": 0
+        },
+        {
+          "denom": "kai",
+          "exponent": 18
+        }
+      ],
+      "base": "ukai",
+      "display": "ukai",
+      "name": "ukai",
+      "symbol": "KAI"
+    }
+  ]
+}

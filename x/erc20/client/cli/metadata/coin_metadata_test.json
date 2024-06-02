@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "description": "The native staking and governance token of the Kairoschain chain",
+      "denom_units": [
+        {
+          "denom": "ukai",
+          "exponent": 0
+        },
+        {
+          "denom": "kai",
+          "exponent": 18
+        }
+      ],
+      "base": "ukai",
+      "display": "kai",
+      "name": "ukai",
+      "symbol": "KAI"
+    }
+  ]
+}
